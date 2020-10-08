@@ -1,12 +1,30 @@
 # Can_detect
 For can detection
 
-## Inference module
+## Project Framework
 
-file: inference/inference.py: inference().
+models/: model files
+
+utils/: inference utils
+
+weight/: weight files
+
+inference.py: inference file
+
+## How to start?
+
+### install dependencies
 
 ```python
-import inference/inference.Inference
+pip install -U -r requirement.txt
+```
+
+### Inference module
+
+file: inference.py: Inference().
+
+```python
+from inference import Inference
 
 # use cpu, devices='cpu' or cuda devices='0' or '0,1,2,3'
 inf = Inference(weight='./weights/best.pt',
