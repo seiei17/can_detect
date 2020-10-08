@@ -14,6 +14,7 @@ inf = Inference(weight='./weights/best.pt',
                 devices='0', 
                 conf_thres=.4, 
                 iou_thres=.5)
-```
 
-return: res -> (class, x1, y1, x2, y2).
+# res -> (class, x1, y1, x2, y2)
+res = inf.inference(img0)
+```
